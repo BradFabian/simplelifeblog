@@ -7,17 +7,36 @@ font-family: 'Ubuntu', sans-serif;
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 /* =================
 Typography
 ================= */
-
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Lora", serif;
   font-weight: 400;
   color: #143774;
+}
+h1 {
   font-size: 2rem;
+  margin: 0;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 0.75rem;
   margin: 0;
 }
 
@@ -28,6 +47,44 @@ h1 {
   margin: 0;
 }
 
+p {
+  color: #707070;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+a {
+  color: #1792d2;
+}
+a:hover {
+  color: #2376a3;
+  text-decoration: underline;
+}
+
+.article-read-more {
+  color: #1792d2;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.article-read-more:hover {
+  color: #2376a3;
+  text-decoration: underline;
+}
+
+.article-info {
+  color: #707070;
+  font-family: "Ubuntu";
+  font-weight: 100;
+  font-size: 0.875rem;
+  margin: 0;
+}
 /* =================
 Layout
 ================= */
@@ -39,8 +96,9 @@ Layout
   margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -49,7 +107,13 @@ header {
   background: #f8f8f8;
   padding: 2em 0;
 }
+/*main {
+  width: 75%;
+}
 
+aside {
+  width: 20%;
+}*/
 /* navigation */
 
 nav ul {
@@ -83,10 +147,16 @@ nav a:focus {
   color: #707070;
 }
 
-@media (max-width: 675px) {
-  .container-nav {
-    flex-direction: column;
-    justify-content: center;
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
+  }
+
+  main {
+    width: 75%;
+  }
+  aside {
+    width: 20%;
   }
 
   .header {
