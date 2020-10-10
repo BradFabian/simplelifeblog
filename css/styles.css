@@ -306,6 +306,13 @@ nav a:focus {
 .widget-recent-post {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+  border: 0;
+  margin: 0;
 }
 
 .widget-post-title {
@@ -314,4 +321,13 @@ nav a:focus {
 
 .widget-img {
   order: 1;
+}
+
+/* footer */
+
+footer {
+  background-color: #143774;
+  text-align: center;
+  color: whitesmoke;
+  padding: 3em 0;
 }
