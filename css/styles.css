@@ -295,3 +295,23 @@ nav a:focus {
   margin-bottom: 2em;
   padding: 1em;
 }
+
+.widget-title,
+.widget-recent-post-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-post-title {
+  order: 2;
+}
+
+.widget-img {
+  order: 1;
+}
